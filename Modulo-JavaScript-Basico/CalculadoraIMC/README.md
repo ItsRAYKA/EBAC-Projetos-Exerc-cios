@@ -1,17 +1,17 @@
-# Calculadora de IMC
+# 🧮Calculadora de IMC
 
 Este é um projeto simples de calculadora de Índice de Massa Corporal (IMC), desenvolvido como parte da introdução ao JavaScript no curso de Desenvolvimento Full Stack da EBAC.
 
-## Funcionalidades
+## ✨Funcionalidades
 - Calcula o IMC com base no peso (kg) e altura (m).
 - Exibe o resultado e a classificação do IMC (abaixo do peso, normal, sobrepeso, etc.).
 
-## Tecnologias Utilizadas
+## 🛠️Tecnologias Utilizadas
 - HTML5
 - CSS3
 - JavaScript
 
-## Como Rodar
+## ▶️Como Rodar
 
 1. Clone este repositório para sua máquina local:
    `git clone https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios.git`
