@@ -25,3 +25,6 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
     [Acessar Projeto da Calculadora de IMC](Modulo-JavaScript-Basico/CalculadoraIMC/)
 
 ---
+- 🎯 **Jogo de Adivinhação**  
+  Exercício prático com HTML5, CSS3 e JavaScript onde o jogador tenta adivinhar um número entre 1 e 100. Criado para praticar lógica e interação com a página.  
+  [Acessar Projeto do Jogo de Adivinhação](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Jogo%20de%20Adivinhacao)
