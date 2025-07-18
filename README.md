@@ -27,3 +27,6 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
 - 🔍 **Jogo de Adivinhação**  
   Exercício prático com HTML5, CSS3 e JavaScript onde o jogador tenta adivinhar um número entre 1 e 100. Criado para praticar lógica e interação com a página.  
   [Acessar Projeto do Jogo de Adivinhação](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Jogo%20de%20Adivinhacao)
+---  
+* 🅿️ **Parquímetro Interativo** Uma aplicação interativa desenvolvida com Programação Orientada a Objetos (POO) em JavaScript, que simula um parquímetro. O usuário informa um valor, e a aplicação calcula o tempo de permanência e o troco. Ideal para demonstrar a aplicação de classes e objetos em um problema prático.  
+  [Acessar Projeto do Parquímetro](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Parquimetro)
