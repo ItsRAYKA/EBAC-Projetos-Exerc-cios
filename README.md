@@ -1,11 +1,10 @@
-# EBAC-Projetos-Exerc-cios
+# EBAC-Exercicios
 Este repositório é dedicado a armazenar todos os projetos e exercícios desenvolvidos durante o curso de **Desenvolvimento Full Stack da EBAC (Escola Britânica de Artes Criativas e Tecnologia)**.
 
 ## 🎯Objetivo do Repositório
 O principal objetivo deste repositório é:
 * **Centralizar** e organizar meu progresso de aprendizado na EBAC.
 * **Demonstrar** as habilidades e conhecimentos adquiridos em diversas tecnologias.
-* Servir como um **portfólio** em construção para futuras oportunidades.
 * **Revisitar** e aprimorar projetos e conceitos aprendidos.
 
 ## 🗂️Organização de Projetos e Exercícios
@@ -25,3 +24,6 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
     [Acessar Projeto da Calculadora de IMC](Modulo-JavaScript-Basico/CalculadoraIMC/)
 
 ---
+- 🔍 **Jogo de Adivinhação**  
+  Exercício prático com HTML5, CSS3 e JavaScript onde o jogador tenta adivinhar um número entre 1 e 100. Criado para praticar lógica e interação com a página.  
+  [Acessar Projeto do Jogo de Adivinhação](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Jogo%20de%20Adivinhacao)
