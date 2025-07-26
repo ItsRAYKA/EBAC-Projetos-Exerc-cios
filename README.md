@@ -30,3 +30,18 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
 ---  
 * 🅿️ **Parquímetro Interativo** Uma aplicação interativa desenvolvida com Programação Orientada a Objetos (POO) em JavaScript, que simula um parquímetro. O usuário informa um valor, e a aplicação calcula o tempo de permanência e o troco. Ideal para demonstrar a aplicação de classes e objetos em um problema prático.  
   [Acessar Projeto do Parquímetro](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Parquimetro)
+---
+* **👤Cadastro de Endereço com CEP**
+    Este é um projeto prático desenvolvido em JavaScript, com foco em consumo de API e manipulação do DOM. Ele simula um formulário de endereço que, ao digitar um CEP, preenche automaticamente os demais campos (logradouro, bairro, cidade, estado) usando a [API ViaCEP](https://viacep.com.br/).
+    
+    **Recursos Destacados:**
+    * Autopreenchimento de endereço via CEP.
+    * Validação de CEP (inválido/incompleto).
+    * Persistência de dados usando `localStorage` (os dados ficam salvos no navegador).
+    * Botão para limpar o formulário.
+    
+    **Tecnologias:** HTML5, CSS3, JavaScript (ES6+), API ViaCEP.
+    
+    **Observação:** O projeto foca na lógica de integração da API e persistência local, não possuindo funcionalidade de "cadastro" final.
+    
+    [Acessar Projeto do Cadastro de Endereço com CEP](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/cadastro%20CEP)
