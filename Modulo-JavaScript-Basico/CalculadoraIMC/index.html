@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator IMC</title>
+    <script src="imc.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="ico/Pelfusion-Folded-Flat-Calculator.ico" type="image/x-icon">
+
+</head>
+<body>
+    <section class="calculadora">
+        <h1>Calculadora de IMC</h1>
+        <label for="peso">Peso (Kg)</label>
+        <input type="number" id="peso">
+
+        <label for="altura">Altura(Cm)</label>
+        <input type="number" id="altura">
+       
+        <button onclick="calcularImc()">Calcular</button>
+      
+        <div class="resultado"> 
+            <p id="Resultado"></p>
+            <p id="classificacaoIMC"></p>
+        </div>
+    </section>
+</body>
+</html>
