@@ -1,6 +1,4 @@
-# 🧾 Sistema de Cadastro com Fetch API e CrudCrud
-
-## 📌 Objetivo
+# 🧾Sistema de Cadastro com Fetch API e CrudCrud
 
 Este projeto é uma aplicação web simples que permite ao usuário gerenciar uma lista de clientes — incluindo o cadastro contendo 'nome' e 'e-mail', 
 a visualização e a exclusão de registros. Para isso, utilizamos a [CrudCrud](https://crudcrud.com/), 
@@ -10,11 +8,12 @@ As interações com a API são feitas por meio da **Fetch API**, usando os méto
 
 ## 🗂️ Estrutura do Projeto
 
-/cadastro de Clientes
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+📁 Cadastro de Clientes
+
+├── 📄 index.html  
+├── 📄 style.css  
+├── 📄 script.js  
+└── 📄 README.md
 
 ## ⚙️ Funcionalidades
 
