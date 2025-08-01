@@ -89,7 +89,8 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
 ![Fetch API](https://img.shields.io/badge/Fetch%20API-0A66C2?style=for-the-badge&logo=javascript&logoColor=white)
 ![CrudCrud](https://img.shields.io/badge/CrudCrud-6A1B9A?style=for-the-badge&logo=api&logoColor=white)
 
-### Observação:  
+**Observação:**  
+
 O projeto tem como foco a lógica de integração com API REST e manipulação de dados via JavaScript. Não possui autenticação nem persistência permanente de dados, pois a API CrudCrud é temporária e voltada para testes.
 
 🔗 [Acessar Projeto do Cadastro de Clientes](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes)
