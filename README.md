@@ -49,7 +49,7 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ---
-* **👤Cadastro de Endereço com CEP**
+ * **👤Cadastro de Endereço com CEP**
     Este é um projeto prático desenvolvido em JavaScript, com foco em consumo de API e manipulação do DOM. Ele simula um formulário de endereço que, ao digitar um CEP, preenche automaticamente os demais campos (logradouro, bairro, cidade, estado) usando a [API ViaCEP](https://viacep.com.br/).
     
     **Recursos Destacados:**
@@ -68,3 +68,29 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
     **Observação:** O projeto foca na lógica de integração da API e persistência local, não possuindo funcionalidade de "cadastro" final.
     
     [Acessar Projeto do Cadastro de Endereço com CEP](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/cadastro%20CEP)
+
+---
+* **👥Cadastro de Clientes com CrudCrud**
+    Este é um projeto prático desenvolvido em JavaScript, com foco no consumo de API REST e manipulação do DOM. Ele simula um sistema de cadastro de clientes, onde o usuário pode inserir nome e e-mail, visualizar     os clientes cadastrados e excluí-los da lista. Os dados são armazenados temporariamente utilizando a API [CrudCrud](https://crudcrud.com/).
+
+**Recursos Destacados:**
+
+* Cadastro de cliente com nome e e-mail.
+* Listagem automática dos clientes cadastrados.
+* Exclusão de clientes diretamente da interface.
+* Comunicação com a API usando Fetch (`GET`, `POST`, `DELETE`).
+* Interface simples e funcional para testes e aprendizado.
+
+**Tecnologias:**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Fetch API](https://img.shields.io/badge/Fetch%20API-0A66C2?style=for-the-badge&logo=javascript&logoColor=white)
+![CrudCrud](https://img.shields.io/badge/CrudCrud-6A1B9A?style=for-the-badge&logo=api&logoColor=white)
+
+### Observação:  
+O projeto tem como foco a lógica de integração com API REST e manipulação de dados via JavaScript. Não possui autenticação nem persistência permanente de dados, pois a API CrudCrud é temporária e voltada para testes.
+
+🔗 [Acessar Projeto do Cadastro de Clientes](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes)
+
