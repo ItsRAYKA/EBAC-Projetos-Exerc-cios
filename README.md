@@ -95,3 +95,33 @@ O projeto tem como foco a lógica de integração com API REST e manipulação d
 
 🔗 [Acessar Projeto do Cadastro de Clientes](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes)
 
+---
+
+* **🧑‍💼 Cadastro de Clientes — Refatorado com Programação Funcional**
+
+Este projeto é uma **versão refatorada** do sistema de cadastro de clientes anterior, com foco em **modularização**, **separação de responsabilidades** e aplicação de **conceitos de programação funcional**.  
+Tornando o código mais limpo, reutilizável e fácil de manter.
+
+**Recursos Destacados:**
+
+* Cadastro de cliente com nome e e-mail.
+* Listagem automática dos clientes cadastrados.
+* Exclusão de clientes diretamente da interface.
+* Requisições HTTP separadas da renderização.
+* Código modular dividido em arquivos: `app.js`, `classes.js`, `utils.js`.
+
+**Tecnologias:**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Fetch API](https://img.shields.io/badge/Fetch%20API-323330?style=for-the-badge&logo=javascript&logoColor=white)
+![CrudCrud](https://img.shields.io/badge/CrudCrud-6A1B9A?style=for-the-badge&logo=crudcrud&logoColor=white)
+
+**Observação:** 
+
+Este projeto foi criado para demonstrar boas práticas de estruturação de código em JavaScript, com foco em **programação funcional** e **modularização**.  
+É uma evolução direta do [Cadastro de Clientes (versão inicial)](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes), mantendo a mesma funcionalidade, mas com uma abordagem mais limpa e escalável.
+
+🧠 Projeto atual: [Cadastro de Clientes (reestruturado)](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes(reestruturado)).
+
+
