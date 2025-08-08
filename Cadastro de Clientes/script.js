@@ -26,7 +26,7 @@ function cadastrar(event) {
     .then(response => {
         //verifica se a resposta foi bem sucedida
         if(!response.ok) {
-            throw new Error('Erro aao cadastrar.') //lança error se não for
+            throw new Error('Erro ao cadastrar.') //lança error se não for
         }
         return response.json() //converte a resposta em JSON
     })
