@@ -111,6 +111,7 @@ Tornando o código mais limpo, reutilizável e fácil de manter.
 * Código modular dividido em arquivos: `app.js`, `classes.js`, `utils.js`.
 
 **Tecnologias:**
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -124,4 +125,17 @@ Este projeto foi criado para demonstrar boas práticas de estruturação de cód
 
 🧠 Projeto atual: [Cadastro de Clientes (reestruturado)](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes(reestruturado)).
 
+---
 
+* **🌐 Criativa Web**
+
+Este projeto, foi criado com foco em consolidar conhecimentos sobre layouts, como **grid** e **flex-box** no CSS. O site simula umma **Agência criadoras de sitess fictícia**, 
+que dispõe de Home, Serviços, Depoimentos e Contato. 
+
+**Tecnologias:**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)  ![Flexbox](https://img.shields.io/badge/Flexbox-000000?style=for-the-badge&logo=csswizardry&logoColor=fff) ![GridLayout](https://img.shields.io/badge/CSS%20Grid-663399?style=for-the-badge&logo=css3&logoColor=fff)
+
+🔗 Acesse aqui: [Criativa Web](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/blob/main/Criativa%20Web/README.md)
+
+---
