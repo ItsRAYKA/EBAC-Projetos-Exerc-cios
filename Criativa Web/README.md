@@ -1,4 +1,4 @@
-# 🌐 Projeto de Site
+# 🌐Criativa Web
 
 Este projeto é criado para aprendizado e prática na área de desenvolvimento web.  
 O foco foi aplicar conceitos semânticos de **HTML5**, além de praticar **layouts com Flexbox e Grid** no **CSS3**.  
