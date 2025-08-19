@@ -129,8 +129,8 @@ Este projeto foi criado para demonstrar boas práticas de estruturação de cód
 
 * **🌐 Criativa Web**
 
-Este projeto, foi criado com foco em consolidar conhecimentos sobre layouts, como **grid** e **flex-box** no CSS. O site simula umma **Agência criadoras de sitess fictícia**, 
-que dispõe de Home, Serviços, Depoimentos e Contato. O mesmo foi **refatorado** utilizando a **metodologia BEM** (Block Element Modifier), visando melhorar a estrutura do CSS, facilitar a manutenção e garantir maior clareza na organização dos estilos.
+Este projeto, foi criado com foco em consolidar conhecimentos sobre **layouts**, como **grid** e **flex-box** no CSS. O site simula uma **Agência criadoras de sites fictícia**, 
+que dispõe de Home, Serviços, Depoimentos e Contato. O mesmo foi **refatorado** utilizando a **metodologia BEM** (Block Element Modifier), visando **melhorar a estrutura do CSS**, facilitar a **manutenção** e garantir **maior clareza** na organização dos estilos.
 
 **Tecnologias:**
 
