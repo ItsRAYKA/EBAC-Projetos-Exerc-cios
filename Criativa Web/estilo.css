@@ -1,194 +1,147 @@
-* { /*reset básico*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*font-Family*/
+/*====font-Family====*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 1.5rem;
-    background-color: #00070D;
-}
-h1, h2, h3 {
-    font-family: 'Montserrat';
-}
-.logo h1 {
+.header {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navegacao {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-.style_servicos h2 {
+.header__nav {
     font-family: 'Montserrat', sans-serif;
 }
 
-.servico h3 {
+.nos__title{
     font-family: 'Montserrat', sans-serif;
 }
 
-.nos h2 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.depoimento p {
+.depo__p {
     font-family: 'Roboto', sans-serif;
 }
 
-.depoimento cite {
+.depo__cite{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
 
-/*======CABEÇALHO========*/
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    
-    border-radius: 5px;
-    border: 1px solid #474F59;
-    box-shadow: 2px 2px 8px#05F29B;
+/*====Navegação style====*/
 
-    background-color:#474F59;
-    color: #F0F0F2;
-}
-/*=====Home====*/
-.apresentacao{
-    text-align: center;
-    margin-top: 5rem;
-    padding: 3rem;
-    line-height: 2;
-
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px #8d8d8f;
-    background-color: #05f29b;
-}
-
-/*======Sobre Nós=====*/
-.nos {
-    padding: 5rem 1.5rem;
-
-    background-color: #00070D;
-    color: #F0F0F2;
-}
-.nos h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #05F29B;
-}
-.nos p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.navegacao{
+.header__nav {
     display: flex;
     gap: 1.5rem;
-
-    font-weight: bold;
 }
-
-a {
+.nav__link {
     text-decoration: none; 
     color: #F0F0F2;
 }
-a:hover {
+.nav__link:hover {
     background-color: #05F29B;
     border-radius: 5px;
     color: #474F59;
 }
-/*=======SERVIÇOS========*/
-.style_servicos {
-    text-align: center;
-   
-
-    margin: 8rem;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    padding: 1.5rem;
-
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px #8d8d8f;
+.nav__link--active { 
     background-color: #05F29B;
+    color: #474F59;
+    border-radius: 0.3rem;
+
+    text-decoration: none; 
 }
-.style_servicos h2 {
-    font-size: 2rem;
+
+/*====HOME====*/
+
+.apresentacao__title {
+    font-size: xx-large;
 }
-.style_servicos p {
+.apresentacao__p {
+    font-style: italic;
+    font-size: larger;
+}
+/*====Sobre====*/
+
+.nos__title {
+    font-size: xx-large;
+    color: #05F29B;
+
+    padding: 2%;
+}
+.nos__p {
+    font-size: larger;
+    color: #F0F0F2;
+
+    line-height: 1.8;
+    text-indent: 2rem;
+}
+/*====Serviços====*/
+
+.servicos__title{
+    font-size: 3rem;
+    line-height: 5%;
+
+    padding: 2.5rem;
+    font-weight: bold;
+}
+.servicos__p {
     font-size: 1.5rem;
     padding: 5rem;
+    font-style: italic;
 }
-.grid_servicos {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
 
+.grid__item {
+    font-size: 1.4rem;
     padding: 1.5rem;
-    gap: 1.5rem;
 
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* sombra individual */
 }
-.grid_servicos p {
-    font-size: 1.1rem;
-    padding: 0;
-}
-.servico {
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px#989c9b;
-    background-color: #F0F0F2;
-}
-.servico:hover {
-    transform: translateY(-5px); /* sobe levemente */
+
+.grid__item:hover {
     background-color: #1F2226;
     color: #F0F0F2;
 }
-
-/*========CONTATO======*/
-.container {
-    margin: 20rem;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-
-    background-color: #05F29B;
-
-    text-align: center;
-    font-size: 1.5rem;
+.grid__item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.contato {
+/*====Depoimentos====*/
+.grid__depo {
+    background-color: #F0F0F2;
+    color: #474F59;
+    padding: 2rem;
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 8px #989c9b;
+    max-width: 350px;
+    flex-basis: 100%;
+}
+
+.depo__p{
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.depo__cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #05F29B;
+}
+
+
+/*====Contatos====*/
+.contatos__title{
     text-align: center;
     font-size: 2rem;
     padding: 1.5rem;
 }
 
-.info-contato {
+.contato__informacao{
     font-size: 1rem;
     padding: 1.5rem;
 }
-/*====formulário===*/
-.form-dados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px#989c9b;
-    background-color: #F0F0F2;
-
-    padding: 2rem;
-}
-label {
+/*====Formulário====*/
+.dados__label {
     margin-bottom: 0.5rem;
     font: 1.1rem;
     color: #474F59;
 }
 
-input, textarea {
+.dados__campos{
     margin-bottom: 1.5rem;
     padding: 0.8rem;
 
@@ -196,7 +149,7 @@ input, textarea {
     border-radius: 5px;
     font-size: 1rem;
 }
-button {
+.dados__botao{
     padding: 0.8rem;
     background-color: #05F29B;
 
@@ -209,111 +162,7 @@ button {
     margin-top: 1rem; 
     transition: background-color 0.3s ease; 
 }
-button:hover {
+.dados__botao:hover {
     background-color: #04d284;
 }
-/*depoimentos*/
-.grid-depoimentos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 3rem;    
-}
-#depoimentos h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    padding-top:5rem;
-    padding-bottom: 5rem;
-
-    color: #F0F0F2;
-    text-align: center;
-
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    font-weight: bold;
-    font-size: 3rem;
-
-    
-}
-.depoimento {
-    background-color: #F0F0F2;
-    color: #474F59;
-    padding: 2rem;
-    border-radius: 5px;
-
-    box-shadow: 2px 2px 8px #989c9b;
-    max-width: 350px;
-    flex-basis: 100%;
-}
-.depoimento p {
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-.depoimento cite {
-    display: block;
-    text-align: right;
-    font-weight: bold;
-    color: #05F29B;
-}
-
-/* Media Query para telas médias (tablets, 601px a 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-
-    /* Ajustes para o cabeçalho */
-    .logo {
-        padding: 1.5rem;
-    }
-    .navegacao a {
-        font-size: 0.9rem;
-    }
-
-    /* Ajustes para a seção de serviços */
-    .grid_servicos {
-        /* Muda para 2 colunas para melhor visualização em tablets */
-        grid-template-columns: 1fr 1fr;
-        padding: 5%;
-        gap: 5%;
-    }
-    .grid_servicos p {
-        padding: 5%;
-    }
-
-    /* Ajustes para a seção de depoimentos */
-    .depoimento {
-        /* Faz com que cada depoimento ocupe metade da tela */
-        flex-basis: calc(50% - 1rem); 
-    }
-}
-/* Media Query para telas grandes (desktops e TVs, 1025px ou mais) */
-@media (min-width: 1025px) {
-
-    /* Ajustes para o cabeçalho */
-    .logo {
-        padding: 2rem 4rem;
-    }
-    .navegacao {
-        gap: 2rem;
-    }
-
-    /* Ajustes para a seção de serviços */
-    .grid_servicos {
-        /* Volta para 4 colunas em telas grandes */
-        grid-template-columns: repeat(4, 1fr); 
-        padding: 2%;
-        gap: 2%;
-    }
-    .grid_servicos p {
-        padding: 5%;
-    }
-
-    /* Ajustes para a seção de depoimentos */
-    .depoimento {
-        /* Faz com que cada depoimento ocupe 1/3 da tela */
-        flex-basis: calc(33.33% - 1.5rem); 
-    }
-}
-
-
 
