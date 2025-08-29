@@ -1,0 +1,227 @@
+@use 'variaveis';
+@use 'mixins';
+@use "sass:math";
+
+/* Cabeçalho */
+.header {
+  display: variaveis.$display-flex;
+  justify-content: variaveis.$js-entre;
+  align-items: center;
+  padding: 1rem 2rem; 
+
+  border-radius: variaveis.$borda-raio;
+  border: 1px solid variaveis.$cor-secundaria;
+  @include mixins.sombra(2px, 2px, 8px, #05F29B);
+
+  background-color: variaveis.$cor-secundaria;
+  color: variaveis.$cor-clara;
+}
+
+/* Home */
+.home {
+  text-align: variaveis.$texto-centro;
+  margin-top: variaveis.$margin-home;
+  padding: variaveis.$padding-padrao;
+  line-height: 2;
+
+  border-radius: variaveis.$borda-raio;
+  @include mixins.sombra(2px, 2px, 10px, #8d8d8f);
+  background-color: variaveis.$cor-destaque;
+}
+
+/* Sobre nós */
+.sobre__nos {
+  margin: variaveis.$margin-padrao;
+  padding: variaveis.$padding-padrao;
+}
+
+/* Serviços */
+.servicos {
+  text-align: variaveis.$texto-centro;
+
+  margin: variaveis.$margin-servicos;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
+  border-radius: variaveis.$borda-raio;
+  @include mixins.sombra(2px, 2px, 10px, #8d8d8f);
+  background-color: variaveis.$cor-destaque;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: variaveis.$coluna variaveis.$coluna; 
+      gap: variaveis.$espacamento-linha;
+
+      padding: variaveis.$padding-padrao;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      border-radius: variaveis.$borda-raio;
+      @include mixins.sombra(2px, 2px, 8px, #989c9b);
+      background-color: variaveis.$cor-clara;
+    }
+}
+
+/* Depoimentos */
+.depoimentos {
+  &__grid {
+    display: variaveis.$display-flex;
+    flex-wrap: variaveis.$quebra-linha;
+    gap: variaveis.$espacamento-linha;
+    justify-content: variaveis.$js-centro;
+
+    margin-top: 3rem;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+    color: variaveis.$cor-clara;
+    text-align: variaveis.$texto-centro;
+    @include mixins.sombraTexto(2px, 2px, 4px, rgba(0,0,0,0.2))
+  }
+  }
+}
+
+/* Contatos */
+.contatos {
+  &__container {
+    margin: 20rem;
+    margin-left: -1.5rem; 
+    margin-right: -1.5rem;
+
+    background-color: variaveis.$cor-destaque;
+
+    text-align: variaveis.$texto-centro;
+    font-size: 1.5rem;
+  }
+}
+/* Formulário */
+.form {
+  &__dados {
+    display: variaveis.$display-flex;
+    flex-direction: variaveis.$direcao-vertical;
+    align-items: center;
+
+    border: variaveis.$borda-raio;
+    @include mixins.sombra(2px, 2px, 8px, #989c9b);
+    background-color: variaveis.$cor-clara;
+
+    padding: 2rem;
+  }
+}
+
+/* Media Queries */
+
+/* Telas pequenas (até 600px - mobile) */
+@media (max-width: 600px) {
+  body {
+    margin: 0.5rem;
+  }
+  .header {
+    flex-direction: variaveis.$direcao-vertical;
+    text-align: variaveis.$texto-centro;
+    gap: 1rem;
+      &__nav {
+        flex-direction: variaveis.$direcao-vertical;
+        gap: 0.8rem;
+      }
+  }
+  .home {
+    &__apresentacao {
+      &__title {
+        font-size: variaveis.$fonte-media;
+      }
+      &__p {
+        font-size: variaveis.$fonte-pequena;
+      }
+    }
+  }
+  .sobre {
+    &__nos {
+      &__title {
+        font-size: variaveis.$fonte-media;
+      }
+      &__p {
+        font-size: variaveis.$fonte-pequena;
+        text-indent: 0;
+      }
+    }
+  }
+  .servicos {
+    margin: 2rem 0;
+    padding: 1rem;
+    &__grid {
+      grid-template-columns: variaveis.$coluna;
+    }
+    &__p {
+      padding: 1rem;
+      font-size: variaveis.$fonte-pequena;
+    }
+  }
+  .depoimentos {
+    &__title {
+      font-size: variaveis.$fonte-grande;
+    }
+    &__depo {
+      max-width: 100%;
+    }
+  }
+  .contatos {
+    &__container {
+      margin: 2rem;
+    }
+  }
+}
+/* Telas médias (601px a 1024px - tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .header {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  &__nav {
+    gap: 1rem;
+  }
+
+  }
+  .servicos {
+    margin: 4rem 1rem;
+  &__grid {
+    grid-template-columns: variaveis.$coluna variaveis.$coluna;
+  }
+  }
+  .depoimentos {
+    &__grid {
+      flex-direction: variaveis.$direcao-horizontal;
+      flex-wrap: variaveis.$quebra-linha;
+    }
+  }
+  .contatos {
+    &__container {
+      margin: 4rem 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+/* Telas grandes (acima de 1024px - desktop) */
+@media (min-width: 1025px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .servicos {
+    margin: 8rem;
+    &__grid {
+       grid-template-columns: repeat(2, 1fr); /* mantém 2 colunas */
+    }
+  }
+  .depoimentos {
+    &__grid {
+      justify-content: variaveis.$js-entre;
+    }
+  }
+  .contatos {
+    &__container {
+      margin: 10rem;
+    }
+  }
+}

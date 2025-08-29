@@ -1,0 +1,57 @@
+
+/* RESET */
+$base-padding: 0;
+$base-margin:  0;
+$caixa-base: border-box;
+
+/* Tipografia */
+$fonte-destaque: 'Montserrat', sans-serif;
+$fonte-secundaria: 'Roboto', sans-serif;
+
+/* Espaçamentos */
+$margin-padrao: 1.5rem;
+$padding-padrao: 1.5rem;
+
+$margin-home: 5rem;
+$margin-servicos: 8rem;
+
+$espacamento-linha: 2rem;
+
+$js-centro: center;
+$js-entre: space-between;
+
+/* Cores */
+$cor-destaque: #05f29b;
+$cor-secundaria: #474F59;
+
+$cor-clara: #f0f0f2;
+$cor-cinza: #8d8d8f;
+
+/* Displays */
+$display-flex: flex;
+
+/* Direção */
+$direcao-horizontal: row;
+$direcao-vertical: column;
+$quebra-linha: wrap;
+
+/* Bordas */
+$borda-raio: 5px;
+
+/* Alinhamentos Textuais */
+$texto-centro: center;
+
+/*Decorações de Texto*/
+$texto-naoDecorado: none;
+
+/* Tamanhos de fonte */
+$fonte-media: 1.5rem;
+$fonte-pequena: 1rem;
+$fonte-grande: 2rem;
+
+$fonte-extraGrande: xx-large;
+
+/* grids calculos */
+@use "sass:math";
+$largura-total: 600px;
+$coluna: math.div($largura-total, 2); // → 300px

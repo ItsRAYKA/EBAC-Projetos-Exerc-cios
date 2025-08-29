@@ -1,0 +1,6 @@
+@mixin sombra($x, $y, $blur, $cor) {
+  box-shadow: $x $y $blur $cor;
+}
+@mixin sombraTexto($x, $y, $blur, $cor) {
+  text-shadow: $x $y $blur $cor;
+}

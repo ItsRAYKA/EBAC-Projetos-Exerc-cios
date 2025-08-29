@@ -1,0 +1,14 @@
+@use 'variaveis';
+
+* {
+  padding: variaveis.$base-padding;
+  margin: variaveis.$base-margin;
+  box-sizing: variaveis.$caixa-base;
+}
+
+/*Body*/
+body {
+    font-family: variaveis.$fonte-secundaria;
+    margin: variaveis.$margin-padrao;
+    background-color: #00070D;;
+}
