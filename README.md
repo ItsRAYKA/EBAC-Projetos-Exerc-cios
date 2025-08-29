@@ -129,12 +129,13 @@ Este projeto foi criado para demonstrar boas práticas de estruturação de cód
 
 * **🌐 Criativa Web**
 
-Este projeto, foi criado com foco em consolidar conhecimentos sobre **layouts**, como **grid** e **flex-box** no CSS. O site simula uma **Agência criadoras de sites fictícia**, 
-que dispõe de Home, Serviços, Depoimentos e Contato. O mesmo foi **refatorado** utilizando a **metodologia BEM** (Block Element Modifier), visando **melhorar a estrutura do CSS**, facilitar a **manutenção** e garantir **maior clareza** na organização dos estilos.
+Este projeto foi refatorado usando a metodologia **BEM** (Block, Element, Modifier) e **SASS**, garantindo uma estrutura de estilos mais clara e eficiente. 
+A organização em blocos, elementos e modificadores torna o CSS semântico e fácil de manter, enquanto o SASS permite modularização, reutilização e padronização de variáveis e estilos. 
+O resultado é um código **organizado, escalável e sustentável**, facilitando a colaboração entre desenvolvedores.
 
 **Tecnologias:**
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)  ![Flexbox](https://img.shields.io/badge/Flexbox-000000?style=for-the-badge&logo=csswizardry&logoColor=fff) ![GridLayout](https://img.shields.io/badge/CSS%20Grid-663399?style=for-the-badge&logo=css3&logoColor=fff) ![BEM](https://img.shields.io/badge/Metodologia-BEM-4B8BBE?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)  ![Flexbox](https://img.shields.io/badge/Flexbox-000000?style=for-the-badge&logo=csswizardry&logoColor=fff) ![GridLayout](https://img.shields.io/badge/CSS%20Grid-663399?style=for-the-badge&logo=css3&logoColor=fff) ![BEM](https://img.shields.io/badge/Metodologia-BEM-4B8BBE?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 🔗 Acesse aqui: [Criativa Web](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/blob/main/Criativa%20Web/README.md)
 
