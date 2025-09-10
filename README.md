@@ -140,3 +140,19 @@ O resultado é um código **organizado, escalável e sustentável**, facilitando
 🔗 Acesse aqui: [Criativa Web](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/blob/main/Criativa%20Web/README.md)
 
 ---
+
+# 💈 Estilo Livre
+
+Este é o projeto **Estilo Livre**, uma página web desenvolvida com foco na aplicação e prática dos conceitos do **Bootstrap 5**.  
+O objetivo foi criar uma página completa e responsiva, utilizando o sistema de grid, componentes e utilitários do framework para garantir um layout moderno e funcional.
+
+## 🚀 Tecnologias Utilizadas
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+## 🔗 Acessar Repositório
+
+[🔓 Clique para acessar o repositório no GitHub](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Estilo%20livre)
