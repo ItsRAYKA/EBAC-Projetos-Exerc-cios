@@ -1,0 +1,194 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Corpo */
+
+body {
+    background-color: #2a003f;
+    color: white;
+}
+
+/*CABEÇALHO*/
+
+.logo-banner {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    width: 220px;
+    height: auto;
+}
+
+/* NAVEGAÇÃO */
+
+.link-nav {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-nav:hover {
+    color: #ff007f;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .logo-banner {
+        position: static;
+        display: block;
+        margin: 0 auto 1rem;
+        width: 160px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .link-nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* Sobre nós */
+#sobre-nos {
+    background-color: #1f1f1f;
+    border-left: 4px solid #ff007f;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.3);
+}
+
+/* Serviços */
+
+#servicos h2 {
+    color: #ffffff;
+    font-size: 2.0rem;
+}
+
+#servicos p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.card {
+    border: 2px solid #ff007f;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 127, 0.4);
+}
+
+.card-title {
+    color: #ff007f;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Depoimentos */
+
+/* Container externo do carousel */
+.carousel-depoimentos {
+    background-color: #181818;
+    color: #f8f9fa;
+    padding: 4rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+/*  alinhamento dos slides */
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cada item do carousel */
+.carousel-item {
+    flex: 0 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Texto do depoimento */
+blockquote p {
+    color: #ff007f;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Nome do cliente */
+.blockquote-footer {
+    color: #ff007f;
+    font-weight: bold;
+}
+
+/* Botões de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff007f;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-item {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+/* Botão do formulário */
+.btn-primary {
+    background-color: #802778;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+form button.btn-primary {
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.btn-primary:hover {
+    background-color: #e60073;
+}
