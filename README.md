@@ -21,9 +21,10 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
 
 * &#128210; **Calculadora de IMC**
     Este é um exercício introdutório de JavaScript, HTML e CSS, criado para aplicar conceitos básicos e demonstrar o andamento inicial dos meus códigos.
-    [Acessar Projeto da Calculadora de IMC](Modulo-JavaScript-Basico/CalculadoraIMC/)
+  
+   🔗 [Acessar Projeto da Calculadora de IMC](Modulo-JavaScript-Basico/CalculadoraIMC/)
 
-   **Tecnologias:**
+  **Tecnologias utilizadas:**
   
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -34,16 +35,17 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
   Exercício prático com HTML5, CSS3 e JavaScript onde o jogador tenta adivinhar um número entre 1 e 100. Criado para praticar lógica e interação com a página.  
   [Acessar Projeto do Jogo de Adivinhação](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Jogo%20de%20Adivinhacao)
 
-   **Tecnologias:**
+   **Tecnologias utilizadas:**
   
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ---  
-* 🅿️ **Parquímetro Interativo** Uma aplicação interativa desenvolvida com Programação Orientada a Objetos (POO) em JavaScript, que simula um parquímetro. O usuário informa um valor, e a aplicação calcula o tempo de permanência e o troco. Ideal para demonstrar a aplicação de classes e objetos em um problema prático.  
-  [Acessar Projeto do Parquímetro](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Parquimetro)
+* 🅿️ **Parquímetro Interativo** Uma aplicação interativa desenvolvida com Programação Orientada a Objetos (POO) em JavaScript, que simula um parquímetro. O usuário informa um valor, e a aplicação calcula o tempo de permanência e o troco. Ideal para demonstrar a aplicação de classes e objetos em um problema prático.
+* 
+  🔗 [Acessar Projeto do Parquímetro](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Parquimetro)
 
-  **Tecnologias:**
+  **Tecnologias utilizadas:**
   
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -58,8 +60,8 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
     * Persistência de dados usando `localStorage` (os dados ficam salvos no navegador).
     * Botão para limpar o formulário.
     
-    **Tecnologias:**
-    
+   **Tecnologias utilizadas:**
+      
     ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
     ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
     ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -67,7 +69,7 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
     
     **Observação:** O projeto foca na lógica de integração da API e persistência local, não possuindo funcionalidade de "cadastro" final.
     
-    [Acessar Projeto do Cadastro de Endereço com CEP](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/cadastro%20CEP)
+   🔗 [Acessar Projeto do Cadastro de Endereço com CEP](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/cadastro%20CEP)
 
 ---
 * **👥Cadastro de Clientes com CrudCrud**
@@ -81,7 +83,7 @@ Aqui você encontrará os projetos e exercícios desenvolvidos ao longo do curso
 * Comunicação com a API usando Fetch (`GET`, `POST`, `DELETE`).
 * Interface simples e funcional para testes e aprendizado.
 
-**Tecnologias:**
+**Tecnologias utilizadas:**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -110,7 +112,7 @@ Tornando o código mais limpo, reutilizável e fácil de manter.
 * Requisições HTTP separadas da renderização.
 * Código modular dividido em arquivos: `app.js`, `classes.js`, `utils.js`.
 
-**Tecnologias:**
+**Tecnologias utilizadas:**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -123,7 +125,7 @@ Tornando o código mais limpo, reutilizável e fácil de manter.
 Este projeto foi criado para demonstrar boas práticas de estruturação de código em JavaScript, com foco em **programação funcional** e **modularização**.  
 É uma evolução direta do [Cadastro de Clientes (versão inicial)](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes), mantendo a mesma funcionalidade, mas com uma abordagem mais limpa e escalável.
 
-🧠 Projeto atual: [Cadastro de Clientes (reestruturado)](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes(reestruturado)).
+🔗 Acesse: [Cadastro de Clientes (reestruturado)](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Cadastro%20de%20Clientes(reestruturado)).
 
 ---
 
@@ -133,11 +135,11 @@ Este projeto foi refatorado usando a metodologia **BEM** (Block, Element, Modifi
 A organização em blocos, elementos e modificadores torna o CSS semântico e fácil de manter, enquanto o SASS permite modularização, reutilização e padronização de variáveis e estilos. 
 O resultado é um código **organizado, escalável e sustentável**, facilitando a colaboração entre desenvolvedores.
 
-**Tecnologias:**
+**Tecnologias utilizadas:**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)  ![Flexbox](https://img.shields.io/badge/Flexbox-000000?style=for-the-badge&logo=csswizardry&logoColor=fff) ![GridLayout](https://img.shields.io/badge/CSS%20Grid-663399?style=for-the-badge&logo=css3&logoColor=fff) ![BEM](https://img.shields.io/badge/Metodologia-BEM-4B8BBE?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-🔗 Acesse aqui: [Criativa Web](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/blob/main/Criativa%20Web/README.md)
+🔗 Acesse: [Criativa Web](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/blob/main/Criativa%20Web/README.md)
 
 ---
 
@@ -146,13 +148,26 @@ O resultado é um código **organizado, escalável e sustentável**, facilitando
 Este é o projeto **Estilo Livre**, uma página web desenvolvida com foco na aplicação e prática dos conceitos do **Bootstrap 5**.  
 O objetivo foi criar uma página completa e responsiva, utilizando o sistema de grid, componentes e utilitários do framework para garantir um layout moderno e funcional.
 
-## 🚀 Tecnologias Utilizadas
+**Tecnologias utilizadas:**
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## 🔗 Acessar Repositório
+---
 
-[🔓 Clique para acessar o repositório no GitHub](https://github.com/Raylunaris/EBAC-Projetos-Exerc-cios/tree/main/Estilo%20livre)
+# 🐾 Pet&Style – Loja Virtual  
+ 
+Projeto fictício desenvolvido para praticar e aplicar os conceitos de **Tailwind CSS**.  
+O site simula uma loja chamada **Pet&Style**, especializada em produtos estilosos para pets, com foco em **responsividade** e **boas práticas de layout**.
+
+**Tecnologias utilizadas:**
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+
+🔗 Acesse: [Pet&Style – Loja Virtual](https://github.com/ItsRAYKA/EBAC-Projetos-Exerc-cios/tree/main/petstyle-loja-virtual)  
+
+
+
+
