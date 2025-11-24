@@ -1,41 +1,57 @@
-function calcularImc(){
-    //Entrada
-    let Peso = document.getElementById("peso").value;
-    let Altura = document.getElementById("altura").value;
+function calcularIMC() {
+  // captação de  campos
+  let peso = Number(document.getElementById("peso").value);
+  let altura = Number(document.getElementById("altura").value);
 
-    //Processamento
-    let imcCalculado = Peso / (Altura * Altura)
+  let formulaImc = peso / (altura * altura);
 
-    //Saída
-     document.getElementById("Resultado").textContent = "IMC " +  imcCalculado.toFixed(2);
+  let resultado = (document.getElementById(
+    "resultado"
+  ).textContent = `${formulaImc.toFixed(2)}`);
 
-    //teste lógico classificação IMC
-     let classificacao = " ";
+  let classIMC = document.getElementById("classIMC");
 
-     if (imcCalculado < 18.5) {
-        classificacao = "Abaixo do peso";
-     }
-     else if (imcCalculado >= 18.5 && imcCalculado <=24.9) {
-        classificacao = "Peso normal";
-     }
+  //verifica se o número é valido
+  if (peso === 0 || altura === 0) {
+    window.alert("Digite um valor válido!");
 
-     else if (imcCalculado >= 25 && imcCalculado <= 29.9) {
-           classificacao = "Sobrepeso";
-     }
-     
-     else if (imcCalculado >= 30 && imcCalculado <= 34.9) {
-        classificacao = "Obesidade Grau I";
-     }
+    // testa condições
+  } else if (formulaImc < 18.5) {
+    classIMC.textContent = "Abaixo do Peso ⚠️";
+  } else if (formulaImc >= 18.5 && formulaImc < 25) {
+    classIMC.textContent = "Peso Normal 🟢";
+  } else if (formulaImc >= 25 && formulaImc < 30) {
+    classIMC.textContent = "Sobrepeso 🟠";
+  } else if (formulaImc >= 30 && formulaImc < 35) {
+    classIMC.textContent = "Obesidade I 🔴";
+  } else if (formulaImc >= 35 && formulaImc < 40) {
+    classIMC.textContent = "Obesidade II 🔴❗";
+  } else {
+    classIMC.textContent = "Obesidade III 🚨";
+  }
+  // remove o botão calcular após o resultado
+  document.getElementById("btn").removeEventListener("click", calcularIMC);
 
-     else if (imcCalculado >= 35 && imcCalculado <= 39.9) {
-        classificacao = "Obesidade Grau II";
-     }
+  // capta a função limparCampos
+  document.getElementById("btn").addEventListener("click", limparCampos);
 
-     else {
-        classificacao = "Obesidade Grau III (Mórbida)";
-     }
-
-     document.getElementById("classificacaoIMC").textContent = "Classificação: " + classificacao
-  
-     
+  // muda o nome do botão calcular para limpar
+  btn.textContent = "Limpar";
 }
+
+function limparCampos() {
+  document.getElementById("peso").value = "";
+  document.getElementById("altura").value = "";
+  document.getElementById("resultado").textContent = "";
+  document.getElementById("classIMC").textContent = "";
+
+  let btn = document.getElementById("btn");
+
+  btn.textContent = "Calcular";
+
+  document.getElementById("btn").removeEventListener("click", limparCampos);
+
+  document.getElementById("btn").addEventListener("click", calcularIMC);
+}
+
+document.getElementById("btn").addEventListener("click", calcularIMC);
