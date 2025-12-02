@@ -1,82 +1,16 @@
-# 🛒 Catálogo de Produtos
+# React + Vite
 
-Aplicação desenvolvida em **React** utilizando **Vite**, com o objetivo de criar um catálogo de produtos dinâmico e funcional. O projeto aplica conceitos como **componentes reutilizáveis, hooks, formulário controlado, listagem dinâmica** e **simulação de carregamento de dados**, além de persistência com **localStorage**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Tecnologias Utilizadas
+Currently, two official plugins are available:
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![LocalStorage](https://img.shields.io/badge/LocalStorage-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Hooks](https://img.shields.io/badge/React_Hooks-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## ✨ Funcionalidades
+## React Compiler
 
-A aplicação oferece os seguintes recursos:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- **ProdutoCard Reutilizável**: Exibe informações de cada produto (nome, preço, descrição e imagem).  
-- **Formulário Controlado**: Permite cadastrar novos produtos no catálogo com campos obrigatórios: nome, preço e descrição.  
-- **Listagem Dinâmica**: Renderiza os produtos utilizando `.map()` a partir do estado.  
-- **Simulação de API**: `useEffect` simula carregamento inicial dos produtos com delay, exibindo mensagem de "Carregando produtos..." centralizada na tela.  
-- **Persistência com LocalStorage**: Mantém os produtos cadastrados mesmo após atualizar a página.  
-- **Deletar Produto**: Permite remover produtos individualmente da lista.
+## Expanding the ESLint configuration
 
-## 🧩 Componentes
-
-- `ProdutoCard.jsx` → Componente para exibir cada produto. Recebe props: `nome`, `preco`, `descricao`, `imagem` e `onDelete`.  
-- `Formulario.jsx` → Formulário controlado que atualiza o estado de novos produtos e envia os dados para o hook customizado.  
-- `useProdutos.jsx` → Hook customizado que gerencia o estado de produtos, adiciona, remove e sincroniza com o `localStorage`.  
-- `App.jsx` → Componente principal que integra todos os componentes e exibe a lista de produtos.
-
-## 📁 Estrutura de Arquivos
-
-```text
-catalog-project/
-├── node_modules/
-├── public/
-├── src/
-│   ├── assets/              
-│   ├── components/
-│   │   ├── Formulario.jsx
-│   │   ├── ProdutoCard.jsx
-│   │   └── hooks/
-│   │       └── useProdutos.js
-│   ├── pages/
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── README.md
-└── vite.config.js
-```
-🧑‍💻 Como Rodar o Projeto
-
-1. Clone este repositório:
-
-```bash
-git clone https://github.com/ItsRAYKA/EBAC-Projetos-Exerc-cios.git
-```
-
-2. Entre na pasta do projeto:
-
-```bash
-cd EBAC-Projetos-Exerc-cios
-```
-3. Instale as dependências:
-
-```bash
-npm install 
-```
-4. Execute o projeto:
-
-```bash
-npm run dev
-```
-5. Abra o link gerado pelo Vite no navegador. 
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
