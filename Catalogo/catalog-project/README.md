@@ -66,11 +66,12 @@ A estilização da aplicação foi feita usando **styled-components**, uma bibli
 │   ├── 📁 assets  
 │   ├── 📁 components  
 │   │   ├── 📁 hooks  
-│   │   │   ├── useProdutos.js  
-│   │   │   ├── Formulario.jsx  
-│   │   │   ├── Formulario.styles.js  
-│   │   │   ├── ProdutoCard.jsx  
-│   │   │   └── ProdutoCard.styles.js  
+│   │   │   └── useProdutos.js  
+│   │   ├── Formulario.jsx  
+│   │   ├── Formulario.styles.js  
+│   │   ├── ProdutoCard.jsx  
+│   │   ├── ProdutoCard.styles.js  
+│   │   └── Carrinho.jsx  
 │   ├── 📁 styles  
 │   │   ├── GlobalStyles.js  
 │   │   ├── App.jsx  
