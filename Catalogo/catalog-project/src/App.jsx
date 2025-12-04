@@ -1,8 +1,9 @@
 import Formulario from "./components/Formulario";
 import ProdutoCard from "./components/ProdutoCard";
 import useProdutos from "./components/hooks/useProdutos";
-
+import Carrinho from "./components/Carrinho";
 import GlobalStyles from "./styles/GlobalStyles";
+
 import {
   Container,
   AppContainer,
@@ -11,8 +12,13 @@ import {
 } from "./App.styles";
 
 function App() {
-  const { produtos, handleAddProduto, handleDelete, carregando } =
-    useProdutos();
+  const {
+    produtos,
+    handleAddProduto,
+    handleDelete,
+    handleToggleCarrinho,
+    carregando,
+  } = useProdutos();
 
   // Mostra mensagem enquanto os produtos estão carregando
   if (carregando) {
@@ -21,7 +27,7 @@ function App() {
 
   return (
     <>
-    <GlobalStyles />
+      <GlobalStyles />
       <AppContainer>
         <Container>
           <h1>Catálogo de Produtos</h1>
@@ -38,10 +44,13 @@ function App() {
               preco={produto.preco}
               descricao={produto.descricao}
               imagem={produto.imagem}
+              adicionado={produto.adicionado}
+              onToggleCarrinho={() => handleToggleCarrinho(produto.id)}
               onDelete={() => handleDelete(produto.id)}
             />
           ))}
         </ProdutosContainer>
+        <Carrinho produtos={produtos} />
       </AppContainer>
     </>
   );

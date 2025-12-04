@@ -1,4 +1,4 @@
-import { useState } from "react"; //importa o hook useState para criar estados internos
+import { useState } from "react"; 
 import { Form, Input, Button } from "./Formulario.styles";
 
 // Componente de formulário para adicionar novos produtos

@@ -1,14 +1,28 @@
-import { Card } from "./ProdutoCard.styles";
+import { Card, BotaoCarrinho, BotaoApagar } from "./ProdutoCard.styles";
 
-// Componente funcional que representa um cartão de produto
-function ProdutoCard({ nome, preco, descricao, imagem, onDelete }) {
+function ProdutoCard({
+  nome,
+  preco,
+  descricao,
+  imagem,
+  adicionado,
+  onToggleCarrinho,
+  onDelete,
+}) {
   return (
     <Card>
       <img src={imagem} alt={nome} />
       <h2>{nome}</h2>
       <p>{descricao}</p>
       <strong>R$ {preco}</strong>
-      <button onClick={onDelete}>Apagar</button>
+
+      {/* Botão dinâmico */}
+      <BotaoCarrinho adicionado={adicionado} onClick={onToggleCarrinho}>
+        {adicionado ? "Adicionado" : "Adicionar ao carrinho"}
+      </BotaoCarrinho>
+
+      {/* Botão apagar */}
+      <BotaoApagar onClick={onDelete}>Apagar</BotaoApagar>
     </Card>
   );
 }

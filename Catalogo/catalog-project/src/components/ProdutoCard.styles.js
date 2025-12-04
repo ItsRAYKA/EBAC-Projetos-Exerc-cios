@@ -38,18 +38,33 @@ export const Card = styled.div`
     font-size: 16px;
     color: #222;
   }
+`;
 
-  button {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+export const BotaoCarrinho = styled.button`
+  background-color: ${({ adicionado }) => (adicionado ? "#198754" : "#6c757d")};
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: ${({ adicionado }) =>
+      adicionado ? "#157347" : "#5c636a"};
   }
+`;
 
-  button:hover {
+export const BotaoApagar = styled.button`
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
     background-color: #d93636;
   }
 `;
