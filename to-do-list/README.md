@@ -28,7 +28,7 @@ src/
 │ ├── filterAtom.js
 │ └── TodoAtom.js
 │
-├── selectors/ # Estados derivados (filtros)
+├── selectors/ 
 │ └── filteredTodosSelector.js
 │
 ├── components/ # Componentes da aplicação
@@ -44,7 +44,7 @@ src/
 │ └── useLocalStorage.js
 │
 ├── assets/
-│ └── to-do-list.jpg # Imagem do projeto
+│ └── to-do-list.jpg 
 │
 ├── App.jsx
 ├── App.css
