@@ -1,52 +1,46 @@
-import React from "react";
-import { useTodos } from "../context/TodoContext";
+import { useRecoilState } from "recoil";
+import { todoFilterState } from "../atoms/filterAtom";
 
-// impede que o componente renderize de novo sem necessidade
-const TodoFilters = React.memo(() => {
-
-  //pegamos o valor do filtro atual e a função que muda o filtro
-  const { filter, changeFilter } = useTodos();
+const TodoFilters = () => {
+  const userName = localStorage.getItem("userName");
+  const [filter, setFilter] = useRecoilState(todoFilterState(userName));
 
   return (
     <div className="flex justify-center gap-3 mb-4 text-sm">
-      
-      {/* Mostrar todas  as tarefas */}
       <button
-        className={`px-3 py-1 rounded transition ${
+        className={
           filter === "all"
-            ? "bg-zinc-900 text-white"
-            : "border border-zinc-400 hover:bg-zinc-200"
-        }`}
-        onClick={() => changeFilter("all")}
+            ? "bg-zinc-900 text-white px-3 py-1 rounded"
+            : "border px-3 py-1 rounded"
+        }
+        onClick={() => setFilter("all")}
       >
         Todas
       </button>
 
-      {/* Mostrar APENAS tarefas concluídas*/}
       <button
-        className={`px-3 py-1 rounded transition ${
+        className={
           filter === "completed"
-            ? "bg-zinc-900 text-white"
-            : "border border-zinc-400 hover:bg-zinc-200"
-        }`}
-        onClick={() => changeFilter("completed")}
+            ? "bg-zinc-900 text-white px-3 py-1 rounded"
+            : "border px-3 py-1 rounded"
+        }
+        onClick={() => setFilter("completed")}
       >
         Concluídas
       </button>
 
-      {/*Mostrar APENAS tarefas pendentes */}
       <button
-        className={`px-3 py-1 rounded transition ${
+        className={
           filter === "pending"
-            ? "bg-zinc-900 text-white"
-            : "border border-zinc-400 hover:bg-zinc-200"
-        }`}
-        onClick={() => changeFilter("pending")}
+            ? "bg-zinc-900 text-white px-3 py-1 rounded"
+            : "border px-3 py-1 rounded"
+        }
+        onClick={() => setFilter("pending")}
       >
         Pendentes
       </button>
     </div>
   );
-});
+};
 
 export default TodoFilters;

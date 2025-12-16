@@ -2,11 +2,9 @@ import { useState, useEffect } from "react";
 
 // guardar valores no localStorage
 export function useLocalStorage(key, initialValue) {
-
-  // value = valor guardado; 
+  // value = valor guardado;
   //setValue = função paa guardar esse valor
   const [value, setValue] = useState(() => {
-
     const saved = localStorage.getItem(key);
 
     // Se existir algo salvo, converte e retorna

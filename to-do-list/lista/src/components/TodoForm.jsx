@@ -1,31 +1,44 @@
 import { useState } from "react";
+import { useSetRecoilState } from "recoil";
+import { todoListState } from "../atoms/TodoAtom";
 
-const TodoForm = ({ onAddTask }) => {
-
-  //taskText = valor atual digitado no input
-  //setTaskText = função que atualiza esse valor 
+const TodoForm = () => {
+  // estado local do input
   const [taskText, setTaskText] = useState("");
 
-  //Função chamada quando o formulário é enviado
+  // pega o usuário logado
+  const userName = localStorage.getItem("userName");
+
+  // agora o atom é por usuário
+  const setTasks = useSetRecoilState(todoListState(userName));
+
   const handleSubmit = (e) => {
-    e.preventDefault(); // evita o reload da página
+    e.preventDefault();
 
-    if (taskText.trim() === "") return; // impede enviar vazio
+    if (taskText.trim() === "") return;
 
-    onAddTask(taskText); // envia o texto para o TodoApp  
-    setTaskText(""); // limpa o campo de input 
+    setTasks((prev) => [
+      ...prev,
+      {
+        id: Date.now(),
+        text: taskText,
+        completed: false,
+      },
+    ]);
+
+    setTaskText("");
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gp-2 mb-4">
+    <form onSubmit={handleSubmit} className="flex gap-2 mb-4">
       <input
         className="flex-1 px-3 py-2 border rounded outline-none focus:ring-2 focus:ring-zinc-800"
         type="text"
         value={taskText}
-        onChange={(e) => setTaskText(e.target.value)} //atualiza o estado 
+        onChange={(e) => setTaskText(e.target.value)}
         placeholder="Digite uma nova tarefa"
       />
-      
+
       <button
         type="submit"
         className="px-4 py-2 bg-zinc-900 text-white rounded hover:bg-black"

@@ -1,58 +1,84 @@
-// Cria o molde Parquimetro + atributos 
+let recebeValor = document.getElementById("recebeValor"); //valor inserido
+
+let tempo = document.getElementById("tempo");
+let troco = document.getElementById("troco");
+
+//tabela de Preços
+const valores = {
+  1.0: 30,
+  1.75: 60,
+  3.0: 120,
+};
+// transforma o objeto em lista
+const listaValores = Object.entries(valores);
+
 class Parquimetro {
-    constructor(valor) {
-        this.valor = valor;
-    }
-    //cria o método (ações)
-    calcularTempo() {
-        let tempo = 0;
-        let troco = 0;
-        let mensagem = "";
+  constructor(
+    recebeValor,
+    tabelaPrecos,
+    tempo,
+    troco,
+    valorMaximo = 3.0,
+    minutos = null,
+    trocoFinal = 0,
+    preco = 0
+  ) {
+    this.recebeValor = recebeValor;
+    this.tabelaPrecos = tabelaPrecos;
+    this.tempo = tempo;
+    this.troco = troco;
+    this.valorMaximo = valorMaximo;
+    this.trocoFinal = trocoFinal;
+    this.minutos = minutos;
+    this.preco = preco;
+  }
 
-        if (this.valor >= 3) {
-        tempo = 120;
-        troco = this.valor - 3;
-    } else if (this.valor >= 1.75) {
-        tempo = 60;
-        troco = this.valor - 2;
-    } else if (this.valor >= 1){
-        tempo = 30;
-        troco = this.valor - 1;
+  calcularTempo() {
+    const resultado = listaValores.find(
+      ([preco, minutos]) => this.recebeValor === Number(preco)
+    );
+    // se o resultado existe então pegue minutos
+    if (resultado) {
+      [this.preco, this.minutos] = resultado;
+
+      this.minutos = this.minutos;
+    } else if (this.recebeValor < 1.0) {
+      this.minutos = null; //valor insuficiente
     } else {
-        mensagem = "Valor insuficiente!";
+      this.minutos = 120; //  valor acima da tabela
     }
+  }
 
-    return {
-      tempo: tempo,
-      troco: troco,
-      mensagem: mensagem
-    };
+  calcularTroco() {
+    //valor máximo da tabelha ('último preço')
+    this.valorMaximoTabela = Number(listaValores[listaValores.length - 1][0]);
+
+    if (this.recebeValor > this.valorMaximo) {
+      this.trocoFinal = this.recebeValor - this.valorMaximo;
+    } else {
+      this.trocoFinal = 0;
+    }
+  }
+
+  exibirResultado() {
+    //mostra tempo e troco ou mesagem de erro
+    if (this.minutos === null) {
+      alert("Valor insuficiente!");
+      tempo.textContent = "";
+      troco.textContent = "";
+      return;
+    }
+    tempo.textContent = `Tempo: ${this.minutos} minutos`;
+    troco.textContent = `Troco: R$ ${this.trocoFinal.toFixed(2)}`;
   }
 }
-document.getElementById('botao').addEventListener('click', function() { 
-    
-// 2. Pegar valor digitado e converter para número
-const input = parseFloat(document.getElementById("recebeValor").value);
+const infoParquimetro = new Parquimetro();
+const botao = document.getElementById("botaoCalc");
 
-// 3. Criar objeto do parquímetro com esse valor
-const parquimetro = new Parquimetro(input);
+botao.addEventListener("click", () => {
+  infoParquimetro.recebeValor = Number(recebeValor.value); //pega valor digitado
 
-// 4. Chamar o método da classe
-const resultado = parquimetro.calcularTempo();
-
-// 5. Mostrar os dados 
-const tempoElemento = document.getElementById('tempo');
-const trocoElemento = document.getElementById('troco');
-
-if (resultado.mensagem) {
-    tempoElemento.textContent = resultado.mensagem;
-    trocoElemento.textContent = '';
-}else {
-    tempoElemento.textContent = `Tempo: ${resultado.tempo} minutos`;
-    trocoElemento.textContent = `Troco: R$${resultado.troco.toFixed(2)}`;
-  }
-})
-
-
-
-
+  infoParquimetro.calcularTempo();
+  infoParquimetro.calcularTroco();
+  infoParquimetro.exibirResultado();
+});
