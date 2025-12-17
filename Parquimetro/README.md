@@ -15,7 +15,7 @@ Os objetivos específicos incluem:
 
 ## 🖼️ Preview do Projeto
 
-![Preview do Parquímetro](ico/Parquimetro.jpeg)
+![Preview do Parquímetro](ico/parquimetro.png)
 
 ## 🚀 Tecnologias Utilizadas
 
