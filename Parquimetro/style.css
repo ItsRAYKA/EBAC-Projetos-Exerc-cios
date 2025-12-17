@@ -53,7 +53,7 @@ button,
 }
 
 button {
-  background-color: #b7553d;
+  background-color: #ecad9d;
   font-size: 18px;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
@@ -74,4 +74,17 @@ footer {
   line-height: 1.5;
   color: #f1e4c3;
   opacity: 0.8;
+}
+
+table {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #333;
+}
+th {
+  background-color: #b7553d;
+  padding: 8px;
+}
+td {
+  padding: 8px;
 }
