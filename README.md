@@ -168,6 +168,20 @@ O site simula uma loja chamada **Pet&Style**, especializada em produtos estiloso
 
 🔗 Acesse: [Pet&Style – Loja Virtual](https://github.com/ItsRAYKA/EBAC-Projetos-Exerc-cios/tree/main/petstyle-loja-virtual)  
 
+---
 
+# 📚 Book Catalog
+
+Aplicação criada como exercício prático de **React** + **TypeScript**, com foco em consolidar conceitos de tipagem estática e componentização. O projeto simula um catálogo de livros com operações de CRUD integradas a uma API externa.
+
+## 🚀 Tecnologias utilizadas
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+---
+
+🔗 **Acesse o projeto:** [Book Catalog](https://github.com/RaykaDev/EBAC-Projects/tree/main/book-catalog)
 
 
